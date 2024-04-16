@@ -6,23 +6,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <script defer src="app.js"></script>
 </head>
 
 <body>
     <h1>APP WEB LIBRI - FIRESTORE DATABASE</h1>
 
     <div class="form-container">
-        <form action="" id="add-book-form">
 
+        <form action="" id="book_form">
+            <input type="text" name="form_title" id="form_title" placeholder="Digite o título do livro..."/>
+            <input type="text" name="form_author" id="form_author" placeholder="Digite o nome do autor..."/>
+            <button>CADASTRAR</button>
         </form>
-        <ul id="book-list"></ul>
+
+        <ul id="book_list"></ul>
     </div>
 </body>
 
-<script src="https://www.gstatic.com/firebasejs/10.10.0/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/10.10.0/firebase-analytics.js"></script>
-<!-- <script src="https://www.gstatic.com/firebasejs/10.10.0/firebase-firestore.js"></script> -->
+<!-- UTILIZANDO VERSÃO DIFERENTE DA USADA NO CND DO PROJETO -->
 
-<script src="app.js"></script>
+<!-- SDK DO FIREBASE -->
+<script src="https://www.gstatic.com/firebasejs/5.0.3/firebase-app.js"></script>
+
+<!-- <script src="https://www.gstatic.com/firebasejs/10.10.0/firebase-analytics.js"></script> -->
+
+<!-- SDK DO FIRESTORE -->
+<script src="https://www.gstatic.com/firebasejs/5.0.3/firebase-firestore.js"></script>
+
+<script>
+    /* CONFIGURAÇÃO DO FIREBASE P/ACESSO DO DATABASE (NECESSÁRIO TIRAR ANTES DO COMMIT) */
+    const firebaseConfig = {
+
+    };
+
+    /* INICIALIZA O FIREBASE EM APP WEB */
+    firebase.initializeApp(firebaseConfig)
+
+    /* INICIALIZA A CONEXÃO COM O BD FIRESTORE */
+    const db = firebase.firestore()
+
+    /* TESTE DE CONEXÃO C/FIRESTORE */
+    console.log(db)
+
+</script>
 
 </html>

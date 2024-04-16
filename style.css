@@ -68,6 +68,10 @@ li div{
     cursor:  pointer;
 }
 
+form {
+    border-bottom: 3px solid #e6e6e6;
+}
+
 form input{
     float: left;
     width: 38%;
