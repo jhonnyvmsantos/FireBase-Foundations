@@ -7,6 +7,8 @@ Repositório para armazenar os fundamentos aprendidos do FireBase, desde o bási
 
 **Front-End:** HTML, JavaScript e CSS.
 
+**Outros:** FireBase.
+
 ## FAQ
 
 #### Há vários projetos dentro do repositório...
